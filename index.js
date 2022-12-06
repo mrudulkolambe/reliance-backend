@@ -5,7 +5,7 @@ require('dotenv').config()
 const bodyParser = require('body-parser')
 const cors = require('cors');
 app.use(cors({
-	origin: ['http://localhost:5500'],
+	origin: ['http://localhost:5500', 'https://oil-rig.vercel.app'],
 }))
 
 app.use(bodyParser.urlencoded({ extended: false }))
